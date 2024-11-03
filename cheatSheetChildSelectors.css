@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(#e66465, #9198e5);
+}
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 35px;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.row {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.row p{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: #ede5e5;
+    margin-top: 5px;
+}
+.row button {
+    padding: 6px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #0000ff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 5px;
+}
+@media screen and (max-width: 624px){
+    .main {
+        width: 100%;
+    }
+    .main #title {
+        font-size: 18px;
+    }
+    .row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+    }
+    .row p{
+        font-size: 16px;
+    }
+    .row button {
+        font-size: 13px;
+    
+    }
+    .images img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 625px) and (max-width: 1024px){
+    .main {
+            width: 100%;
+    }
+    
+    .main #title {
+            font-size: 28px;
+    }
+    
+    .row {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000;
+    }
+    .row p {
+        font-size: 20px;
+    }
+    
+    .images img {
+            width: 48px;
+            height: 48px;
+    }
+}
+@media screen and (min-width: 1025px){
+    .main {
+            width: 100%;
+        }
+    
+        .main #title {
+            font-size: 35px;
+        }
+    
+        .row {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .row p {
+            font-size: 25px;
+        }
+    
+        .row button {
+            font-size: 20px;
+            padding: 3px 8px;
+        }
+    
+        .images {
+            display: flex;
+        }
+    
+        .images img {
+            width: 60px;
+            height: 60px;
+        }
+}
